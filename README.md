@@ -10,6 +10,10 @@ Preprocesador: Stylus
 ```sh
 npm install stylus -g
 ```
+ * **Ir al directorio donde se encuentra el archivo "estilos.styl" :**
+```sh
+.../stylus/
+```
  * **Stylus Compile:**
 ```sh
 stylus estilos.styl
