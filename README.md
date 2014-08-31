@@ -50,7 +50,7 @@ stylus -u nib -w -o ../css/ estilos.styl
 ```sh
 stylus -u nib -w -c ../css/ estilos.styl
 ```
-Ordena y Optimiza
+* **Ordena y Optimiza**
 ```sh
 stylus -u nib -w -c -o ../css/ estilos.styl
 ```
