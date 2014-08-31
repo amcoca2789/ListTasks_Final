@@ -1,0 +1,90 @@
+.accion
+	border-bottom 3px solid color_bordes
+	margin estandar_margin_figure 0 estandar_margin_figure 0
+	padding 10px 0 10px 0
+	position relative
+	&-call
+		position absolute
+		right 5%
+		top 12%
+		width 30%
+		&-formulario
+			border 1px solid color_bordes
+			border-radius 0.5em
+			display none
+			margin 0
+			padding estandar_padding_formulario
+			&-lista
+				display block
+				list-style none
+				list-style-position inside
+				margin estandar_margin_lista
+				padding estandar_padding_lista
+				text-align center
+				&-item
+					display inline-block
+					margin 0
+					padding 0
+					vertical-align middle
+					&-boton
+						border 1px solid color_bordes
+						border-radius 0.5em
+						display block
+						margin 0
+						padding estandar_padding_enlace
+						&:active
+							color color_texto
+						&:hover
+							background-color color_fondo_body
+						&:link
+							color color_texto
+						&:visited
+							color color_texto
+			&-titulo2
+				display block
+				font-weight bold
+				margin 0
+				padding 0
+				text-align center
+		&-lista
+			display block
+			list-style none
+			list-style-position inside
+			margin 0
+			padding estandar_padding_lista
+			text-align center
+			&-item
+				display inline-block
+				margin 0
+				padding 0
+				vertical-align middle
+				&-enlace
+					border 1px solid color_bordes
+					border-radius 0.5em
+					display block
+					margin 0
+					padding estandar_padding_enlace
+					text-align center
+					text-decoration none
+					&:active
+						color color_texto
+					&:hover
+						background-color color_fondo_body
+					&:link
+						color color_texto
+					&:visited
+						color color_texto
+	&-producto
+		display block
+		margin 0
+		padding 0
+		position absolute
+		top 40%
+		&-titulo2
+			display block
+			margin 0
+			padding estandar_margin_enlace
+		&-titulo3
+			display block
+			margin 0
+			padding estandar_margin_enlace
