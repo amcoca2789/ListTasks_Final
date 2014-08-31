@@ -42,6 +42,10 @@ npm install nib
 ```styl
 @import 'nib'
 ``` 
+ * **Ir al directorio donde se encuentra el archivo "estilos.styl" :**
+```sh
+.../stylus/
+```
  * **NIB (Orden, Prefijos de Navegadores, etc)**
 ```sh
 stylus -u nib -w estilos.styl
