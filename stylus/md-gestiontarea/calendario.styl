@@ -1,129 +1,123 @@
 .calendario
+	display block
+	margin 10px
+	padding 5px
 	&-dia
-		&-botonera
-			text-align center
-			&-lista
-				display inline-block
-				margin estandar_margin_lista
-				padding 0
-				text-align center
-				vertical-align middle
-				&-item
-					display inline-block
-					margin 0
-					padding 0
-					vertical-align middle
-					&-enlace
-						border 1px solid color_bordes
-						border-radius 0.5em
-						display block
-						margin 0
-						padding estandar_padding_enlace
-						text-align center
-						text-decoration none
-						&:active
-							color color_texto
-						&:hover
-							background-color color_azul_1
-						&:link
-							color color_texto
-						&:visited
-							color color_texto
-		&-formulario
-			border 1px solid color_bordes
-			border-radius 0.5em
-			display none
-			margin estandar_margin_formulario
-			padding estandar_padding_formulario
-			&-lista
-				display block
-				margin estandar_margin_lista
-				padding 0
-				text-align center
-				vertical-align middle
-				&-item
-					display inline-block
-					margin 0
-					padding 0
-					vertical-align middle
-					text-align center
-					&-boton
-						border 1px solid color_bordes
-						border-radius 0.5em
-						display block
-						margin 0
-						padding estandar_padding_enlace
-						text-align center
-						&:active
-							color color_texto
-						&:hover
-							background-color color_azul_1
-						&:link
-							color color_texto
-						&:visited
-							color color_texto
-						
-			&-titulo3
-				display block
-				text-align center
-		&-nombre
-			text-align center
-			&-lista
-				display inline-block
-				margin estandar_margin_lista
-				padding 0
-				text-align center
-				vertical-align middle
-				&-item
-					display inline-block
-					margin 0
-					padding 0
-					vertical-align middle
-					&-enlace
-						border 1px solid color_bordes
-						border-radius 0.5em
-						display block
-						margin 0
-						padding estandar_padding_enlace
-						text-align center
-						text-decoration none
-						&:active
-							color color_texto
-						&:hover
-							background-color color_azul_1
-						&:link
-							color color_texto
-						&:visited
-							color color_texto
-			&-span
-				display inline-block
-				vertical-align middle
-				text-align center
-		&-tarea
-			background-color white
-			border 1px solid color_bordes
-			border-radius 0.5em
+		border 2px solid color_bordes
+		border-radius 0.5em
+		margin 0
+		padding 5px
+		&-detalle
 			display block
-			margin estandar_margin_div
-			padding estandar_padding_div
+			margin 0
+			padding 0
+			text-align center
+			&-nombre
+				background-color color_azul_1
+				border 1px solid color_bordes
+				border-radius 0.5em
+				display inline-block
+				margin 0
+				padding 5px
+				vertical-align middle
+			&-fecha
+				background-color color_verde_1
+				border 1px solid color_bordes
+				border-radius 0.5em
+				display inline-block
+				margin 0
+				padding 5px
+				vertical-align middle
+		&-tarea
+			background-color color_naranja_1
+			border 1px solid color_bordes
+			border-radius 0.5em
+			margin 5px
+			padding 5px
+			&-lista
+				display block
+				list-style none
+				list-style-position inside
+				margin estandar_margin_lista
+				padding 0
+				text-align center
+				&-item
+					display inline-block
+					margin 4px
+					padding 0
+					vertical-align middle
+					&-enlace
+						border 1px solid color_bordes
+						border-radius 0.5em
+						display block
+						margin 0
+						padding estandar_padding_enlace
+						text-align center
+						text-decoration none
+						&:active
+							color color_texto
+						&:hover
+							background-color color_fondo_body
+						&:link
+							color color_texto
+						&:visited
+							color color_texto
 			&-descripcion
+				background-color #FFFFFF
+				border 1px solid color_fondo_body_opuesto
+				border-radius 0.5em
 				color black
 				display block
+				margin 0
+				padding 10px
 				text-align center
 				word-break break-all
 				&-enlace
-					background-color color_naranja_1
 					border 1px solid color_bordes
 					border-radius 0.5em
+					display inline-block
+					font-size 0.8em
 					margin 0
-					padding 3px
+					padding estandar_padding_enlace
 					text-align center
 					text-decoration none
+					vertical-align middle
 					&:active
 						color color_texto
 					&:hover
-						background-color color_azul_1
+						background-color color_fondo_body
 					&:link
 						color color_texto
 					&:visited
 						color color_texto
+			&-formulario
+				background-color color_azul_1
+				border 1px solid color_bordes
+				border-radius 0.5em
+				display none
+				margin 0
+				padding 5px
+				&-lista
+					display block
+					list-style none
+					list-style-position inside
+					margin estandar_margin_lista
+					padding estandar_padding_lista
+					text-align center
+					&-item
+						display inline-block
+						margin 4px
+						padding 0
+						vertical-align middle
+						&-boton
+							border 1px solid color_bordes
+							border-radius 0.5em
+							display block
+							margin 0
+							padding estandar_padding_boton
+							&:hover
+								background-color color_fondo_body
+				&-titulo3
+					text-align center
+		
+	
