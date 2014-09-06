@@ -614,7 +614,8 @@
   border: 1px solid #fff;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
-  padding: 10px;
+  display: inline-block;
+  padding: 5px;
   vertical-align: top;
   width: 13%;
 }
