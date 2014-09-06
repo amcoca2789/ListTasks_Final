@@ -1,78 +1,73 @@
 .calendario
-	display block
-	margin 10px
-	padding 5px
 	&-dia
-		border 2px solid color_bordes
+		border 1px solid color_bordes
 		border-radius 0.5em
-		display inline-block
-		margin 0
-		padding 5px
+		padding 10px
 		vertical-align top
 		width 13%
 		&-detalle
+			background-color color_azul_1
+			border 1px solid color_bordes
+			border-radius 0.5em
 			display block
-			margin 0
-			padding 0
 			text-align center
-			&-nombre
-				background-color color_azul_1
-				border 1px solid color_bordes
-				border-radius 0.5em
-				display inline-block
-				margin 0
-				padding 5px
-				vertical-align middle
 			&-fecha
-				background-color color_verde_1
-				border 1px solid color_bordes
-				border-radius 0.5em
 				display inline-block
-				margin 0
 				padding 5px
 				vertical-align middle
+				word-break break-all
+			&-nombredia
+				display inline-block
+				font-weight bold
+				padding 5px
+				vertical-align middle
+				word-break break-all
+		&-resultado
+			background-color white
+			border 1px solid color_bordes
+			border-radius 0.5em
+			display block
+			margin 5px
+			&-mensaje
+				color red
+				display block
+				text-align center
+				word-break break-all
 		&-tarea
 			background-color color_naranja_1
 			border 1px solid color_bordes
 			border-radius 0.5em
+			display block
 			margin 5px
-			padding 5px
-			&-lista
+			padding 10px
+			&-contenedor
 				display block
-				list-style none
-				list-style-position inside
-				margin estandar_margin_lista
-				padding 0
 				text-align center
-				&-item
+				&-archivar
 					display inline-block
-					margin 4px
-					padding 0
 					vertical-align middle
-					&-enlace
+					text-align center
+					&-boton
 						border 1px solid color_bordes
 						border-radius 0.5em
-						display block
-						margin 0
-						padding estandar_padding_enlace
-						text-align center
-						text-decoration none
-						&:active
-							color color_texto
 						&:hover
 							background-color color_fondo_body
-						&:link
-							color color_texto
-						&:visited
-							color color_texto
+				&-conclusion
+					display inline-block
+					vertical-align middle
+					text-align center
+					&-boton
+						border 1px solid color_bordes
+						border-radius 0.5em
+						&:hover
+							background-color color_fondo_body
 			&-descripcion
-				background-color #FFFFFF
-				border 1px solid color_fondo_body_opuesto
+				background-color white
+				border 1px solid color_bordes
 				border-radius 0.5em
 				color black
 				display block
-				margin 0
-				padding 10px
+				margin 5px
 				text-align center
 				word-break break-all
 				&-enlace
@@ -80,10 +75,10 @@
 					border-radius 0.5em
 					display inline-block
 					font-size 0.8em
-					margin 0
 					padding estandar_padding_enlace
-					text-align center
+					margin 0
 					text-decoration none
+					text-align center
 					vertical-align middle
 					&:active
 						color color_texto
@@ -93,34 +88,36 @@
 						color color_texto
 					&:visited
 						color color_texto
-			&-formulario
-				background-color color_azul_1
+			&-edicion
+				background-color color_verde_1
 				border 1px solid color_bordes
 				border-radius 0.5em
 				display none
-				margin 0
-				padding 5px
+				margin 5px
+				padding estandar_padding_formulario
+				&-label
+					word-break break-all
 				&-lista
-					display block
 					list-style none
 					list-style-position inside
 					margin estandar_margin_lista
-					padding estandar_padding_lista
+					padding 0
 					text-align center
 					&-item
 						display inline-block
-						margin 4px
-						padding 0
 						vertical-align middle
 						&-boton
-							border 1px solid color_bordes
-							border-radius 0.5em
 							display block
-							margin 0
 							padding estandar_padding_boton
+							&:active
+								color color_texto
 							&:hover
-								background-color color_fondo_body
+								background-color color_azul_1
+							&:link
+								color color_texto
+							&:visited
+								color color_texto
 				&-titulo3
 					text-align center
-		
+					word-break break-all
 	

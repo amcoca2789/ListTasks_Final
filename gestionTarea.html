@@ -40,7 +40,8 @@
             <a class="newtarea-enlace u-enlace u-boton-newtarea" id="btn_new_tarea" href="#"></a>
             <form class="newtarea-formulario" id="form-newtarea" action="ServiceNewTarea" method="post">
                 <h3 class="newtarea-formulario-titulo3 u-titulo-3">
-                Nueva Tarea</h3>
+                    Nueva Tarea
+                </h3>
                 <label class="newtarea-formulario-label u-label" for="form-newtarea">Descripcion:</label>
                 <input class="newtarea-formulario-input u-input" name="caja_descripcion_creacion" id="caja_descripcion_creacion" type="text" />
                 <label class="newtarea-formulario-label u-label" for="form-newtarea">Fecha Realizacion:</label>
@@ -63,41 +64,50 @@
             <!-- ************************* [INICIO] Plantilla DIA *********************** -->
             <div class="calendario-dia" id="dia1">
                 <div class="calendario-dia-detalle">
-                    <span class="calendario-dia-detalle-nombre u-span">Lunes</span>
-                    <p class="calendario-dia-detalle-fecha u-parrafo">05 septiembre 2014</p>
+                    <span class="calendario-dia-detalle-nombredia u-span">Lunes</span>
+                    <p class="calendario-dia-detalle-fecha u-parrafo">[05 septiembre 2014]</p>
+                </div>
+                <div class="calendario-dia-resultado">
+                    <span class="calendario-dia-resultado-mensaje u-span">NO hay tareas para este dia</span>
                 </div>
                 <!-- ************************* [INICIO] Plantilla Tarea *********************** -->
                 <div class="calendario-dia-tarea" id="dia1-tarea1">
-                    <ul class="calendario-dia-tarea-lista">
-                        <li class="calendario-dia-tarea-lista-item">
-                            <a class="calendario-dia-tarea-lista-item-enlace u-enlace u-boton-concluida" id="btn-concluida-dia1-tarea1" href="ServicioConclusionTarea"></a>
-                        </li>
-                        <li class="calendario-dia-tarea-lista-item">
-                            <a class="calendario-dia-tarea-lista-item-enlace u-enlace u-boton-archivada" id="btn-archivada-dia1-tarea1" href="ServicioArchivarTarea"></a>
-                        </li>
-                    </ul>
+                    <div class="calendario-dia-tarea-contenedor">
+                        <form class="calendario-dia-tarea-contenedor-conclusion" id="formulario-concluida-dia1-tarea1" action="ServicioConclusionTarea" method="post">
+                            <input name="caja-nro-dia" id="caja-nro-dia" value="" type="hidden" />
+                            <input name="caja-nro-tarea" id="caja-nro-tarea" value="" type="hidden" />
+                            <input name="caja-nro-idtarea" id="caja-nro-idtarea" value="" type="hidden" />
+                            <button class="calendario-dia-tarea-contenedor-conclusion-boton u-boton u-boton-concluida" id="" type="submit"></button>
+                        </form>
+                        <form class="calendario-dia-tarea-contenedor-archivar" id="formulario-archivada-dia1-tarea1" action="ServicioArchivarTarea" method="post">
+                            <input name="caja-nro-dia" id="caja-nro-dia" value="" type="hidden" />
+                            <input name="caja-nro-tarea" id="caja-nro-tarea" value="" type="hidden" />
+                            <input name="caja-nro-idtarea" id="caja-nro-idtarea" value="" type="hidden" />
+                            <button class="calendario-dia-tarea-contenedor-archivar-boton u-boton u-boton-archivada" id="" type="submit"></button>
+                        </form>
+                    </div>
                     <span class="calendario-dia-tarea-descripcion u-span">
                     Reuniones o comunicaciones online con amig@s o familiares
                     <a class="calendario-dia-tarea-descripcion-enlace u-enlace u-boton-ediciontarea" id="btn-edicion-dia1-tarea1" href="#"></a>
                     </span>
-                    <form class="calendario-dia-tarea-formulario" id="form-edittarea-dia1-tarea1" action="ServicioEdicionTarea" method="post">
-                        <h3 class="calendario-dia-tarea-formulario-titulo3 u-titulo-3">Edicion Tarea</h3>
-                        <input name="caja_nro_dia" id="caja_nro_dia" value="" type="hidden" />
-                        <input name="caja_nro_tarea" id="caja_nro_tarea" value="" type="hidden" />
-                        <input name="caja_idtarea_edicion-dia1-tarea1" id="caja_idtarea_edicion-dia1-tarea1" value="" type="hidden" />
-                        <label class="calendario-dia-tarea-formulario-label u-label" for="form-edittarea-dia1-tarea1">Descripcion:</label>
-                        <input class="calendario-dia-tarea-formulario-input u-input" name="caja_descripcion_edicion-dia1-tarea1" id="caja_descripcion_edicion-dia1-tarea1" value="" type="text" />
-                        <label class="calendario-dia-tarea-formulario-label u-label" for="form-edittarea-dia1-tarea1">Fecha Realizacion:</label>
-                        <input class="calendario-dia-tarea-formulario-input u-input u-fecha" name="caja_fecharealizacion_edicion-dia1-tarea1" id="caja_fecharealizacion_edicion-dia1-tarea1" value="" placeholder="YYYY-mm-dd HH:mm:ss" type="text" />
-                        <ul class="calendario-dia-tarea-formulario-lista">
-                            <li class="calendario-dia-tarea-formulario-lista-item">
-                                <button class="calendario-dia-tarea-formulario-lista-item-boton u-boton" id="btn-guardar-edittarea" type="submit">Guardar</button>
+                    <form class="calendario-dia-tarea-edicion" id="formulario-editada-dia1-tarea1" action="ServicioEdicionTarea" method="post">
+                        <h3 class="calendario-dia-tarea-edicion-titulo3 u-titulo-3">Edicion Tarea</h3>
+                        <input name="caja-nro-dia" id="caja-nro-dia" value="" type="hidden" />
+                        <input name="caja-nro-tarea" id="caja-nro-tarea" value="" type="hidden" />
+                        <input name="caja-nro-idtarea-edicion-dia1-tarea1" id="caja-nro-idtarea-edicion-dia1-tarea1" value="" type="hidden" />
+                        <label class="calendario-dia-tarea-edicion-label u-label" for="formulario-editada-dia1-tarea1">Descripcion:</label>
+                        <input class="calendario-dia-tarea-edicion-input u-input" name="caja_descripcion_edicion-dia1-tarea1" id="caja_descripcion_edicion-dia1-tarea1" value="" type="text" />
+                        <label class="calendario-dia-tarea-edicion-label u-label" for="formulario-editada-dia1-tarea1">Fecha Realizacion:</label>
+                        <input class="calendario-dia-tarea-edicion-input u-input u-fecha" name="caja_fecharealizacion_edicion-dia1-tarea1" id="caja_fecharealizacion_edicion-dia1-tarea1" value="" placeholder="YYYY-mm-dd HH:mm:ss" type="text" />
+                        <ul class="calendario-dia-tarea-edicion-lista">
+                            <li class="calendario-dia-tarea-edicion-lista-item">
+                                <button class="calendario-dia-tarea-edicion-lista-item-boton u-boton" id="btn-guardar-dia1-tarea1" type="submit">Guardar</button>
                             </li>
-                            <li class="calendario-dia-tarea-formulario-lista-item">
-                                <button class="calendario-dia-tarea-formulario-lista-item-boton u-boton" id="btn-limpiar-edittarea" type="reset">Limpiar</button>
+                            <li class="calendario-dia-tarea-edicion-lista-item">
+                                <button class="calendario-dia-tarea-edicion-lista-item-boton u-boton" id="btn-limpiar-dia1-tarea1" type="reset">Limpiar</button>
                             </li>
-                            <li class="calendario-dia-tarea-formulario-lista-item">
-                                <button class="calendario-dia-tarea-formulario-lista-item-boton u-boton" id="btn-cancelar-edittarea" type="button">Cancelar</button>
+                            <li class="calendario-dia-tarea-edicion-lista-item">
+                                <button class="calendario-dia-tarea-edicion-lista-item-boton u-boton" id="btn-cancelar-dia1-tarea1" type="button">Cancelar</button>
                             </li>
                         </ul>
                     </form>
