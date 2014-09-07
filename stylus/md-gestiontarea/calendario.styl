@@ -1,66 +1,60 @@
 .calendario
-	text-align center
+	border 1px solid color_bordes
+	border-radius 0.5em
+	margin estandar_margin_div
+	padding estandar_padding_div
 	&-dia
 		border 1px solid color_bordes
 		border-radius 0.5em
 		display inline-block
-		padding 3px
+		margin estandar_margin_div
+		padding estandar_padding_div
 		vertical-align top
-		width 13.1%
 		&-detalle
-			background-color color_azul_1
-			border 1px solid color_bordes
-			border-radius 0.5em
 			display block
 			text-align center
-			&-fecha
-				display inline-block
-				padding 5px
-				vertical-align middle
-				word-break break-all
 			&-nombredia
-				display inline-block
-				font-weight bold
-				padding 5px
-				vertical-align middle
-				word-break break-all
+				display block
+				text-align center
+			&-fecha
+				display block
+				text-align center
 		&-resultado
 			background-color white
 			border 1px solid color_bordes
 			border-radius 0.5em
 			display block
-			margin 5px
+			margin estandar_margin_div
+			padding estandar_padding_div
 			&-mensaje
-				color red
 				display block
+				color red
 				text-align center
-				word-break break-all
 		&-tarea
-			background-color color_naranja_1
+			background-color color_naranja_2
 			border 1px solid color_bordes
 			border-radius 0.5em
 			display block
-			margin 5px
-			padding 3px
+			margin estandar_margin_div
+			padding estandar_padding_div
 			&-contenedor
-				display block
+				margin estandar_margin_div
+				padding estandar_padding_div
 				text-align center
-				&-archivar
-					display inline-block
-					vertical-align middle
-					text-align center
-					&-boton
-						border 1px solid color_bordes
-						border-radius 0.5em
-						&:hover
-							background-color color_fondo_body
 				&-conclusion
 					display inline-block
 					vertical-align middle
-					text-align center
 					&-boton
-						border 1px solid color_bordes
-						border-radius 0.5em
+						display block
+						padding 5px
+						&:hover
+							background-color color_fondo_body
+				&-archivar
+					display inline-block
+					vertical-align middle
+					&-boton
+						display block
+						padding 5px
 						&:hover
 							background-color color_fondo_body
 			&-descripcion
@@ -69,57 +63,106 @@
 				border-radius 0.5em
 				color black
 				display block
-				margin 5px
+				margin estandar_margin_div
+				padding estandar_padding_div
 				text-align center
-				word-break break-all
 				&-enlace
 					border 1px solid color_bordes
 					border-radius 0.5em
 					display inline-block
 					font-size 0.8em
-					padding estandar_padding_enlace
 					margin 0
-					text-decoration none
+					padding estandar_padding_enlace
 					text-align center
+					text-decoration none
 					vertical-align middle
 					&:active
 						color color_texto
 					&:hover
-						background-color color_fondo_body
+						background-color color_azul_1
 					&:link
 						color color_texto
 					&:visited
 						color color_texto
 			&-edicion
-				background-color color_verde_1
+				background-color color_azul_2
 				border 1px solid color_bordes
 				border-radius 0.5em
 				display none
-				margin 5px
-				padding estandar_padding_formulario
-				&-label
-					word-break break-all
+				margin estandar_margin_div
+				padding estandar_padding_div
+				&-input
+					width 100%
 				&-lista
+					display block
 					list-style none
 					list-style-position inside
-					margin 5px 0 5px 0
-					padding 0
+					margin estandar_margin_div
+					padding estandar_padding_div
 					text-align center
 					&-item
 						display inline-block
 						vertical-align middle
 						&-boton
 							display block
-							padding estandar_padding_boton
-							&:active
-								color color_texto
+							padding estandar_padding_enlace
 							&:hover
-								background-color color_azul_1
-							&:link
-								color color_texto
-							&:visited
-								color color_texto
+								background-color color_fondo_body
 				&-titulo3
 					text-align center
-					word-break break-all
-	
+					
+	&-encabezado
+		display block
+		margin estandar_margin_div
+		padding estandar_padding_div
+		text-align center
+		&-titulo3
+			display block
+			text-align center
+		&-titulo4
+			display block
+			text-align center
+	&-newtarea
+		&-enlace
+			border 1px solid color_bordes
+			border-radius 0.5em
+			display block
+			padding estandar_padding_enlace
+			text-align center
+			text-decoration none
+			&:active
+				color color_texto
+			&:hover
+				background-color color_azul_1
+			&:link
+				color color_texto
+			&:visited
+				color color_texto
+		&-formulario
+			background-color color_verde_1
+			border 1px solid color_bordes
+			border-radius 0.5em
+			display none
+			margin estandar_margin_formulario
+			padding estandar_padding_formulario
+			&-input
+				width 100%
+			&-lista
+				list-style none
+				list-style-position inside
+				margin estandar_margin_lista 
+				padding estandar_padding_lista
+				text-align center
+				&-item
+					display inline-block
+					margin 0
+					padding 0
+					vertical-align middle
+					&-boton
+						display block
+						padding 5px
+						&:hover
+							background-color color_fondo_body
+			&-titulo3
+				text-align center
+			
